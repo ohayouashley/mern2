@@ -77,3 +77,5 @@ const [] = arr; //specify which array we are pulling arrays out of. We only have
 //where as object we are pulling keys out.
 
 const [item1, item2] = arr; //they are just going to pull them out by index
+
+// by adding a comma in the middle of oftem 1 and item 2 it will skip a position

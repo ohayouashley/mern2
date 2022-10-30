@@ -1,0 +1,10 @@
+//!NOTES
+
+//*React - front-end UI
+
+//*MongoDB - where we are going to store data. Our database. 
+
+//*Middle layer - Server API (layer in between react and mongoDB)"Within
+//*this API are functions within the database. Each end point is going to have an addresss
+//*lets says we have a URL called /users - when we go to that address we're going to make
+//*request to the databse - sends "
