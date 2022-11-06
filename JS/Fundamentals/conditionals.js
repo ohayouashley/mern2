@@ -23,3 +23,5 @@ const greet = (person) => {
 
 console.log(greet({ name: "Alice" })); // "Howdy, Alice"
 console.log(greet(null)); // "Howdy, stranger"
+
+//
