@@ -33,5 +33,5 @@ const animals = ["horse", "dog", "fish", "cat", "bird"];
 const { email, password } = person;
 const [firstAnimal, secondAnimal, thirdAnimal] = animals;
 
-console.log(person);
+console.log(email);
 // console.log(animals);
