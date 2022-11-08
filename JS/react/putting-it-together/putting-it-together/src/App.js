@@ -31,7 +31,7 @@ const personObj = [
 function App() {
 	return (
 		<div className="App">
-            {personList.map((personObj, index) => (
+            {personList.map((personObj, index) => 
         <PersonComp
           key={index}
           firstName={personObj.firstName}
@@ -42,7 +42,7 @@ function App() {
         ))}
 		</div>
   
-}
+            };
 
 
 export default App;
