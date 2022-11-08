@@ -39,10 +39,9 @@ function App() {
           age={personObj.age}
           hairColor={personObj.hairColor}
         />
-        ))}
+        ))
 		</div>
-  
-            };
 
+            }
 
 export default App;
