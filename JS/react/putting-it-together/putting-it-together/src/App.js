@@ -28,20 +28,20 @@ const personObj = [
 	},
 ];
 
-function App() {
-	return (
-		<div className="App">
-            {personList.map((personObj, index) => 
-        <PersonComp
-          key={index}
-          firstName={personObj.firstName}
-          lastName={personObj.lastName}
-          age={personObj.age}
-          hairColor={personObj.hairColor}
-        />
-        ))
-		</div>
+// function App() {
+// 	return (
+// 		<div className="App">
+//             {personList.map((personObj, index) => {
+//         <PersonComp
+//           key={index}
+//           firstName={personObj.firstName}
+//           lastName={personObj.lastName}
+//           age={personObj.age}
+//           hairColor={personObj.hairColor}
+//         />
+//             })
 
-            }
+// 		</div>
+// };
 
 export default App;

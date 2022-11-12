@@ -27,8 +27,3 @@ const ChildComponent = (props) => {
 //     firstName: 'Betty',
 //     lasstName: 'Mavis'
 // }
-
-//?there;'s going to be some data coming from our App.js
-t;
-//? the reason this is not working is because you don't have react installed on this project. You haven't even made a project
-//?for this section of your homework you need to go do that before it will work with react.
