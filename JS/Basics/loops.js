@@ -65,10 +65,10 @@ console.log(subNum);
 //! Here we declared the variable i. Used the while expression that states "if I is more than 0 keep running"
 //!Then print out your variable plus the string "bottles of beer on the wall"
 
-// var i = 99;
-// while (i > 0) {
-// 	console.log(i + " bottles of beer on the wall");
-// 	i -= 1;
-// }
+var i = 99;
+while (i > 0) {
+	console.log(i + " bottles of beer on the wall");
+	i -= 1;
+}
 
 //? Write a while statement that

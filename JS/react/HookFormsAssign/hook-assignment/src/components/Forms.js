@@ -53,7 +53,7 @@ const Form = (props) => {
 				<div style={inputDataDivStyle}>
 					<label htmlFor="password"> Password</label>
 					<input
-						type="text"
+						type="password"
 						name="password"
 						onChange={(e) => setPassword(e.target.value)}
 					/>
@@ -62,7 +62,7 @@ const Form = (props) => {
 				<div style={inputDataDivStyle}>
 					<label htmlFor="confirmPassword">Confirm Password</label>
 					<input
-						type="text"
+						type="password"
 						name="confirmPassword"
 						onChange={(e) => setConfirmPassword(e.target.value)}
 					/>
