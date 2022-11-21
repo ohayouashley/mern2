@@ -44,3 +44,38 @@ weekDay("Thursday");
 const migraineScale = (howBad) => console.log(`My migraines are a ${howBad}`);
 
 migraineScale("10 out of 10 would not recommend");
+//######################################################################################
+
+//? turn these functions into arrow functions:
+
+//?1.
+function sum(a, b) {
+	return a + b;
+}
+//* arrow function
+let sum2 = (a, b) => {
+	return a + b;
+};
+//*even shorter
+let sum3 = (a, b) => a + b;
+
+//?2.
+function isPositive(number) {
+	return number >= 0;
+}
+//* arrow function
+let isPositive2 = (number) => number >= 0;
+
+//?3.
+function randomNumber() {
+	return Math.random;
+}
+//* arrow function
+let randomNumber = () => Math.random;
+
+//?4.
+document.addEventListener("click", function () {
+	console.log("Click");
+});
+//* arrow function
+document.addEventListener("click", () => console.log("Click"));

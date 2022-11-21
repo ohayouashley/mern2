@@ -43,3 +43,29 @@ const Nav = () => {
 {
 	navigate(-1) is going back one page, like a back button
 	*/
+
+//?Given a string s find the length of the longest substring without repeating the characters. 
+
+var lengthOfLongestSubstring = function(s) {
+	//1. initialize two pointers to create a window
+	let start = 0
+	//2. create an object to keep track of everything we've seen
+	let seen = {}
+	let max = 0
+	//3. loop through the string until we find a repeated character
+	for (let end = 0; end<s.length;end++) {
+		let current = s[end]
+		seen[current] = end //*what are the two possible scenarios of each loop. 
+		//*if we've seen this character before
+		if(seen[current]){
+			start++
+			delete seen[start]
+		}
+		
+		//*if this is a unique character
+	} else {
+		max++
+	}
+return max
+
+}
