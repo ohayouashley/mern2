@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	inherit {
+		opacity: 1;
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 0.2vh #fff, 0 0 0.4vh #fff, 0 0 0.6vh rgb(228, 204, 255),
+			0 0 0.8vh rgb(228, 204, 255), 0 0 0 1vh rgb(228, 204, 255);
+	}
+
+	to {
+		text-shadow: 0 0 0.4vh #fff, 0 0 0.6vh rgba(240, 248, 255, 0.4),
+			0 0 0.8vh rgba(240, 248, 255, 0.4), 0 0 1vh rgba(240, 248, 255, 0.4),
+			0 0 1.2vh rgba(240, 248, 255, 0.4);
+	}
+}
+
+html {
+	/* background */
+	background-color: grey;
+	/* background-image: linear-gradient(
+		to bottom right,
+		rgba(0, 255, 255, 0.8),
+		rgba(184, 212, 142, 0.5),
+		rgba(128, 255, 212, 0.8)
+	); */
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	/* size */
+
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	/* background-color: rgb(255, 192, 203, 0); */
+	background-color: rgba(255, 192, 203, 0.5);
+	width: 100vw;
+	height: 99vh;
+}
+
+header {
+	background-color: rgba(240, 248, 255, 0.4);
+	/* color: rgba(0, 194, 175, 0.8); */
+	color: rgb(215, 133, 147);
+	font-size: 8vh;
+	font-family: lobster;
+	border-radius: 8vh;
+	margin: 0.5vh auto;
+	animation: fadeInAnimation ease 2s, glow 1s ease-in-out infinite alternate;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: lobster;
+	/* color: rgba(0, 194, 175, 0.9); */
+	color: rgb(215, 133, 147);
+}
+
+nav {
+	background-color: rgba(240, 248, 255, 0.4);
+	/* color: rgba(0, 194, 175, 0.8); */
+	color: rgb(215, 133, 147);
+	margin: 1vh auto;
+	border-radius: 8vh;
+	font-size: 3vh;
+	padding: 1vh;
+	animation: fadeInAnimation ease 2s, glow 2s ease-in-out infinite alternate;
+}
+
+main {
+	/* background */
+	/* background-color: rgb(128, 0, 128, 0); */
+	background-color: rgba(240, 248, 255, 0.4);
+	/* sizing */
+	height: 81vh;
+	max-height: 81vh;
+	width: 99vw;
+	overflow-y: scroll;
+	/* margin padding */
+	margin: 0 auto;
+	/* flex */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	/* scroll */
+	overflow-y: scroll;
+	scrollbar-width: none;
+	/* extra */
+	animation: fadeInAnimation ease 7s;
+}
+
+main > div {
+	background-color: rgb(240, 248, 255, 0.4);
+	color: rgba(0, 0, 0, 0.6);
+	/* sizing */
+	width: fit-content;
+	height: 79vh;
+	max-height: 79vh;
+	width: max-content;
+	height: max-content;
+	/* border and padding */
+	border-radius: 3vh;
+	padding: 1vh;
+	margin: 1vh;
+	/* scroll */
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+a {
+	color: rgba(0, 194, 175, 0.8);
+	font-family: lobster;
+	text-decoration: none;
+	margin: 0.5vh;
+}
+
+img {
+	filter: opacity(0.5) grayscale(1);
+	animation: fadeInAnimation ease 7s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	border-radius: 80%;
+	width: 25vw; /* width of container */
+	object-fit: cover;
+}
+
+/* FORMS */
+form {
+	width: 30vw;
+}
+input,
+select,
+textarea,
+select:focus {
+	/* background and border */
+	background-color: rgba(240, 248, 255, 0.6);
+	border: none;
+	border-radius: 2vh;
+	outline: none;
+	/* size */
+	width: 90%;
+	padding: 1vh 2vh;
+	margin: 1vh;
+	resize: none;
+	/* font */
+	font-family: "Barlow Condensed";
+	font-size: 2vh;
+	color: rgba(0, 0, 0, 0.6);
+}
+input[type="checkbox"] {
+	display: inline;
+	padding: 0;
+	margin: 1vh;
+	width: min-value;
+	min-width: 1vh;
+}
+
+/* TABLES */
+table {
+	border-collapse: collapse;
+	background-color: rgba(204, 255, 244, 0.2);
+	border-radius: 2vh;
+	/* padding and margin */
+	padding: 1vh;
+	margin: 1vh auto;
+	table-layout: fixed;
+	word-wrap: break-word;
+	/* height width */
+	max-width: inherit;
+}
+
+th {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	background-color: rgba(0, 194, 175, 0.8);
+	color: white;
+}
+td {
+	word-break: break-all;
+}
+
+td,
+th {
+	border: 1px solid rgba(240, 248, 255, 0.3);
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: rgba(240, 248, 255, 0.15);
+}
+
+tr:hover {
+	background-color: rgba(240, 248, 255, 0.5);
+}
+
+ul {
+	list-style-type: none;
+}
+ul > li {
+	margin: 2vh;
+}
+
+/*Tablet 800 Half 1000 */
+@media only screen and (max-width: 1000px) {
+	main {
+		display: block;
+	}
+	main > div {
+		margin: 1vh auto;
+		width: max-content;
+		max-width: 95vw;
+	}
+	img {
+		width: 45vh;
+		max-width: 80vw;
+	}
+	form {
+		width: 100%;
+	}
+	input,
+	select,
+	textarea,
+	select:focus {
+		/* size */
+		width: 95%;
+	}
+}
+/* Phone is 600px*/
+@media only screen and (max-width: 600px) {
+	img {
+		width: 50vh;
+		max-width: 98vw;
+	}
+	main {
+		display: block;
+	}
+	main > div {
+		margin: 1vh auto;
+		width: max-content;
+		max-width: 95vw;
+	}
+	form {
+		width: 100%;
+	}
+}
